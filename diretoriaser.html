@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+	<link rel="icon" href="sao1.png">
+	<title>ETEC de Itanhaém</title>
+</head>
+<body>
+	<style type="text/css">
+  .maluquisse {
+	  display: inline-block;
+	  position: relative;
+	  color: #eee;
+	}
+
+	.maluquisse::after {
+	  content: '';
+	  position: absolute;
+	  width: 100%;
+	  transform: scaleX(0);
+	  height: 2px;
+	  bottom: 0;
+	  left: 0;
+	  background-color: #eee;
+	  transform-origin: bottom right;
+	  transition: transform 0.25s ease-out;
+	}
+
+	.maluquisse:hover::after {
+	  transform: scaleX(1);
+	  transform-origin: bottom left;
+	}
+
+	.zoom a:hover{
+	  transform: scale(1.1);
+	  transition: all ease 500ms;
+	}
+
+	.nozoom a:hover{
+		transform: scale(1);
+		transition: none;
+	}
+
+	@media only screen and (max-width: 991px) {
+   		#fadeshow1 {
+        	display: none;
+    	}
+	}
+
+	@media only screen and (min-width: 991px) {
+   		#fadeshow2 {
+        	display: none;
+    	}
+	}
+	body{
+		background-image: url("wall.jpg");
+	}
+  </style>	
+
+  	<div class="container-fluid">
+  		<nav class="navbar navbar-expand-lg rounded-bottom fixed-top" style="background-color: #68a171;" id="ete-navbar">
+	  	  	<a id="fadeshow2" class="navbar-brand" href="index.html">
+				<img class="img-fluid" src="logo3.png" alt width="135px">
+  			</a>
+	  	  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	  	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  	<ul class="navbar-nav m-auto">
+			  	  	<li class="nav-item zoom dropdown mt-3 px-3">
+						<a class="nav-link animated pulse dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      						<p class="h5 maluquisse ps-md-5 ps-lg-0">Escola</p>
+    					</a>
+    					<ul class="dropdown-menu nozoom">
+	  						<li><a class="dropdown-item" href="2023-Calendario.pdf">Calendário</a></li>
+	  						<li><a class="dropdown-item" href="horario.pdf">Horário Escolar</a></li>
+	  						<li><a class="dropdown-item" href="observatorio.pdf">Observatório</a></li>
+	  						<li><a class="dropdown-item" href="regimento.pdf">Regimento Comum</a></li>
+	  						<li><a class="dropdown-item" href="apm.pdf">APM</a></li>
+	  						<li><a class="dropdown-item" href="conselho.html">Conselho de Escola</a></li>
+    					</ul>
+					</li>
+
+					<div id="fadeshow1" class="col-xl-0 mt-3">
+		    			<div style="border-left:3px solid #eee;height:45px"></div>
+		  			</div>
+
+  					<li class="nav-item zoom dropdown mt-3 px-3">
+					    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  	  <p class="h5 maluquisse ps-md-5 ps-lg-0">
+						  	Cursos
+						  </p>
+					    </a>
+					    <ul class="dropdown-menu nozoom">
+						  	<li><a class="dropdown-item" href="cursos.html">ETIM</a></li>
+						  	<li><a class="dropdown-item" href="tecnico.html">Curso Técnico</a></li>
+					    </ul>
+					</li>
+
+					<div id="fadeshow1" class="col-xl-0">
+		    			<div style="border-left:3px solid #eee;height:75px"></div>
+		  			</div>
+
+					<li class="nav-item ps-3">
+  	    				<a class="navbar-brand" id="fadeshow1" href="index.html">
+  	      					<img class="img-fluid" src="logo3.png" alt width="135px">
+  	    				</a>
+	  	  	      	</li>
+
+	  	  	      	<div id="fadeshow1" class="col-xl-0">
+		    			<div style="border-left:3px solid #eee;height:75px"></div>
+		  			</div>
+
+  	  				<li class="nav-item zoom dropdown mt-3 px-3">
+						<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		 					<p class="h5 maluquisse ps-md-5 ps-lg-0">
+		  							Direção
+		  					</p>
+						</a>
+						<ul class="dropdown-menu nozoom">
+							<li><a class="dropdown-item" href="diretoriaetec.html">Diretoria ETEC</a></li>
+							<li><a class="dropdown-item" href="diretoriaaca.html">Diretoria Acadêmica</a></li>
+							<li><a class="dropdown-item" href="diretoriaser.html">Diretoria de Serviços</a></li>
+							<li><a class="dropdown-item" href="ata.html">ATA</a></li>
+					 	</ul>
+					</li>
+
+					<div id="fadeshow1" class="col-xl-0 mt-3">
+		    			<div style="border-left:3px solid #eee;height:45px"></div>
+		  			</div>
+
+  					<li class="nav-item zoom mt-3 px-3">
+  						<a class="nav-link text-white" href="funcionarios.html">
+  							<p class="h5 maluquisse ps-md-5 ps-lg-0">Secretaria</p>
+  						</a>
+  					</li>
+				</ul>
+			</div>
+	  	</nav>
+	<div class="row justify-content-center pt-5">
+		<hr class="border border-success border-2" style="width: 700px;">
+	</div>
+
+	<div class="container">
+	  <div class="row justify-content-center pt-5">
+			<div class="col-sm-10 col-5 pb-5">
+				<p class="h2 text-center display-5 pt-5" style="color: #1b632e;">Diretoria de Serviços</p>
+			</div>
+			<div class="row justify-content-center pt-2 pb-5">
+		  	<hr class="border border-success border-2" style="width: 700px;">
+	  	</div>
+	  </div>
+	</div>
+
+	<div class="row justify-content-center pt-5">
+		<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 offset-sm-0 offset-md-0 offset-lg-0 bg-light border border-success border-2 pt-5 pb-5">
+		  <img class="thumbnail img-fluid" src="user.png" style="width: 200px; display: block; margin-left: auto; margin-right: auto;">
+		  <h5 class="text-center">Débora Cravo</h5>
+		  <h4 class="text-center">Diretora de Serviços</h4>
+		</div>
+	</div><br>
+	<div class="row justify-content-center pt-5">
+		<hr class="border border-success border-2" style="width: 700px;">
+	  </div>
+
+	<div class="row justify-content-center pt-5">
+		<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 offset-sm-0 offset-md-0 offset-lg-0 bg-light border border-success border-2 pt-5 pb-5">
+			<h2 class="text-center">Horário de Atendimento</h2>
+			<img class="img-fluid" src="relogio.png" style="width: 50px; display: block; margin-left: auto; margin-right: auto;"><br>
+			<table class="table">
+				<tr class="table">
+					<td>Segunda</td>
+					<th>14h00 as 18h00 / 19h00 as 23h00</th>
+				</tr>
+				<tr class="table">
+					<td>Terça</td>
+					<th>10h00 as 12h30 / 13h30 as 19h00</th>
+				</tr>
+				<tr class="table">
+					<td>Quarta</td>
+					<th>08h00 as 12h00 / 13h00 as 17h00</th>
+				</tr>
+				<tr class="table">
+					<td>Quinta</td>
+					<th>08h00 as 12h00 / 13h00 as 17h00</th>
+				</tr>
+				<tr class="table">
+					<td>Sexta</td>
+					<th>08h00 as 12h00 / 13h00 as 17h00</th>
+				</tr>
+			</table><br>
+			<h6 class="text-center fw-bold">Nota: Estes horários podem ser alterados devido a reuniões e outras obrigações referentes a direção!!</h6>
+		</div>
+	</div><br>
+
+	<div class="container">
+	  <!--footer-->
+	  <footer class="text-center text-white" style="background-color: #43664a;">
+	  	<!--links-->
+		<div class="container">
+		  <section class="mt-5">
+		  	<!--linha-->
+			<div class="row text-center d-flex justify-content-center pt-5">
+
+			  <!--grid-->
+			  <div class="col-md-2">
+			  	<h6 class="text-uppercase font-weight-bold">
+			  	  <a href="https://urhsistemas.cps.sp.gov.br/dgsdad/selecaopublica/ETEC/PSS/Abertos.aspx" class="text-white">Processo Seletivo</a>
+			  	</h6>
+			  </div>
+
+			  <!--grid-->
+			  <div class="col-md-2">
+			  	<h6 class="text-uppercase font-weight-bold">
+			  	  <a href="https://www.vestibulinhoetec.com.br/home/" class="text-white">Vestibulinho</a>
+			  	</h6>
+			  </div>
+
+			  <!--grid-->
+			  <div class="col-md-2">
+			  	<h6 class="text-uppercase font-weight-bold">
+			  	  <a href="funcionarios.html" class="text-white">Secretaria</a>
+			  	</h6>
+			  </div>
+			  
+			  <div class="col-md-2">
+			  	<h6 class="text-uppercase font-weight-bold">
+			  	  <a href="https://www.cps.sp.gov.br/concursopublico/" class="text-white">Concurso Público</a>
+			  	</h6>
+			  </div>
+
+			  <div class="col-md-2">
+			  	<h6 class="text-uppercase font-weight-bold">
+			  		<a href="fale.html" class="text-white">Fale Conosco</a>
+			  	</h6>
+			  </div>
+
+			</div>		
+		  </section>
+
+		  <hr class="my-5">
+
+		  <!--texto-->
+		  <section class="mb-3">
+		  	<div class="row d-flex justify-content-center">
+		  	  <div class="col-lg-8">
+		  	  	<p>
+		  	  	  Av. José Batista Campos, 1431 - Cidade Anchieta, Itanhaém - SP, 11740-000
+		  	  	</p>
+		  	  </div>
+		  	</div>
+		  </section>
+		  <section class="text-center">
+        	<img class="img-fluid" src="centro.png" style="width: 150px;">
+        	<img class="img-fluid" src="sao.png" style="width: 400px;">
+          </section>
+
+		  <div class="text-center p-3" style="background-color: rgba(0,0,0,0.2);">
+		  	<a class="text-white"></a>
+		  </div>
+		</div>
+	  </footer>
+	</div>
+  </div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
